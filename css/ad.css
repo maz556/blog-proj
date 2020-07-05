@@ -1,0 +1,21 @@
+.ad {
+    grid-area: ad;
+}
+
+.ad > img {
+    display: block;
+    margin: 25px auto;
+    width: 60%; 
+}
+
+.ad > img:hover {
+    cursor: not-allowed
+}
+
+@media (max-width: 600px) {
+    .ad {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}

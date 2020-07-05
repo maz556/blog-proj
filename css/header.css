@@ -1,0 +1,61 @@
+header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 5px 30px;
+    background-color: azure;
+}
+
+#title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#title > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.head-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.styled-button {
+    margin: 5px 5px;
+    padding: 0 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: auto;
+    height: 1fr;
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: 3px 3px 2px gray;
+    transition-duration: 0.04s;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+
+.styled-button:active {
+    box-shadow: 0px 0px 0px gray;
+}
+
+.styled-button:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .head-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

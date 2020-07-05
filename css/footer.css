@@ -1,0 +1,7 @@
+footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 10px
+}
