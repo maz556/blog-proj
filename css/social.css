@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-button {
+    height: 100%;
+    display: block;
+}
+
+.social > * {
+    margin: 5px;
+}
+
+.social > a {
+    height: 100%;
+}
+
+#share-text {
+    max-height: 100%;
+}

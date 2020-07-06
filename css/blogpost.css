@@ -1,0 +1,67 @@
+@import "author.css";
+@import "social.css";
+@import "footer.css";
+
+body {
+    margin: 0;
+    font-family: "Apple Chancery", "Snell Roundhand", "URW Chancery L", cursive;
+}
+
+header {
+    width: 100%;
+    background-color: azure;
+    padding: 5px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "fig fig abt"
+        "rst rst abt"
+        "shr shr .";
+}
+
+.container > * {
+    margin: 10px 10px;
+}
+
+@media (max-width: 600px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "fig"
+            "rst"
+            "shr"
+            "abt";
+    }
+}
+
+#roast-pic {
+    grid-area: fig;
+    display: flex;
+    flex-direction: column;
+}
+
+#roast-pic > * {
+    width: 100%;
+    background-color: azure;
+}
+
+.roast {
+    grid-area: rst;
+}
+
+.roast > * {
+    margin: initial;
+}
+
+.about-author {
+    grid-area: abt;
+}
+
+.social {
+    grid-area: shr;
+}

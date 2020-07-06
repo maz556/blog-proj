@@ -7,45 +7,73 @@
         <link rel="stylesheet" href="css/blogpost.css" />
     </head>
     <body>
-        <div class="top-bar"><a href="index.html">Back to home</a></div>
+        <header><a href="index.html">Back to home</a></header>
         <div class="container">
-            <figure>
-                <img src="images/erp.jpg" alt="Dumb-Looking Dog" />
+            <!-- roasting picture -->
+            <figure id="roast-pic">
+                <img src="images/erp_crop.jpg" alt="Dumb-Looking Dog" />
                 <figcaption>Unflattering picture provided by the will of the people</figcaption>
             </figure>
+            <!-- about author card -->
             <div class="about-author">
-                <img src="images/freg.jpg" alt="Profile pic" />
-                <h3>bainfrog</h3>
-                <p><b>Title:</b> Roasting Hobbyist</p>
-                <p><b>Company:</b> Working on myself</p>
-                <p><b>Quote:</b></p>
-                <blockquote>
-                    I find that in times of stress and confusion, the 
-                    best thing to do is to make you'reself feel better by
-                    judging lesser beings as lesser than you'reself. Forget
-                    the endless dissapointement you bring you're family and
-                    the lack of initiative your taking in your career.
-                    You can at least say you don't look as dumb as you're.
-                </blockquote>
+                <div class="author-card">
+                    <figure id="profile-pic">
+                        <img src="images/freg.jpg" alt="Profile pic" />
+                    </figure>
+                    <div class="author-info">
+                        <h3>bainfrog</h3>
+                        <p><b>Title:</b> Roasting Hobbyist</p>
+                        <p><b>Company:</b> Working on myself</p>
+                    </div>
+                    <div class="author-quote">
+                        <p><b>Quote:</b></p>
+                        <blockquote id="quote-block">
+                            I find that in times of stress and confusion, the 
+                            best thing to do is to make you'reself feel better by
+                            judging lesser beings as lesser than you'reself. Forget
+                            the endless dissapointement you bring you're family and
+                            the lack of initiative your taking in you're career.
+                            You can at least say you don't look as dumb as you're.
+                        </blockquote>
+                    </div>
+                </div>
             </div>
+            <!-- roasting text -->
             <div class="roast">
                 <h2>Eddie Rabbit Potato</h2>
                 <p>
                     <strong>BOI!</strong> What kind of butt-sniffing, sock-chewing,
-                    bullied-by-squirrel-lookin-ass chump thinks he can just hog the
+                    bullied-by-squirrels-lookin-ass <strong><u>CHUMP</u></strong> thinks he can just hog the
                     bean bag like he be payin some kinda bills around here? 
                 </p>
+                <h3>Things that are whack:</h3>
+                <ul>
+                    <li>His hair</li>
+                    <li>His gear</li>
+                    <li>His jewelry</li>
+                    <li>His footstance</li>
+                    <li>The way that he talks</li>
+                    <li>The way that he doesn't even like to smile</li>
+                </ul>
+                <p>Thank you for coming to my TED talk.</p>
             </div>
+            <!-- social sharing -->
             <div class="social">
-                <h3>Share:</h3>
-                <a href="facebook.com">Facebook</a>
-                <a href="twitter.com">Twitter</a>
-                <a href="linkedin.com">LinkedIn</a>
+                <h3 id="share-text">Share:</h3>
+                <a href="https://www.facebook.com/">
+                    <img class="social-button" class src="images/fb.jpg" alt="Facebook button" />
+                </a>
+                <a href="https://www.twitter.com">
+                    <img class="social-button" src="images/twitter.png" alt="Twitter button" />
+                </a>
+                <a href="https://www.linkedin.com">
+                    <img class="social-button" src="images/linkedin.png" alt="LinkedIn button" />
+                </a>
             </div>
-            <footer>
-                <i>a blog by Manuel Zamora</i>
-                <b>&copy Copyright 2020</b>
-            </footer>
         </div>
+        <footer>
+            <i>a blog by Manuel Zamora</i>
+            <b>&copy Copyright 2020</b>
+        </footer>
     </body>
 </html>

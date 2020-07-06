@@ -1,0 +1,46 @@
+.author-card {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "pic info"
+        "qt qt";
+    padding: 5px;
+    background-color: azure;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px gray;
+}
+
+.author-card > * {
+    margin: 5px;
+}
+
+#profile-pic {
+    grid-area: pic;
+}
+
+#profile-pic > * {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+
+.author-info {
+    grid-area: info;
+}
+
+.author-info > * {
+    margin: 0;
+}
+
+.author-quote {
+    grid-area: qt;
+}
+
+.author-quote > p {
+    margin: initial;
+}
+
+#quote-block {
+    margin: 5px 10px;
+}

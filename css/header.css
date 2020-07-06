@@ -1,5 +1,4 @@
 header {
-    grid-area: hd;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,14 +33,14 @@ header {
     height: 1fr;
     font-size: 1.5em;
     text-align: center;
-    box-shadow: 3px 3px 2px gray;
+    box-shadow: 3px 3px 4px 2px gray;
     transition-duration: 0.04s;
     flex-basis: auto;
     flex-shrink: 1;
 }
 
 .styled-button:active {
-    box-shadow: 0px 0px 0px gray;
+    box-shadow: 0px 0px 1px gray;
 }
 
 .styled-button:focus {
