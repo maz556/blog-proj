@@ -43,11 +43,12 @@ header {
     grid-area: fig;
     display: flex;
     flex-direction: column;
+    background-color: azure;
+    padding: 10px 10px 2px 10px;
 }
 
 #roast-pic > * {
     width: 100%;
-    background-color: azure;
 }
 
 .roast {
@@ -55,7 +56,7 @@ header {
 }
 
 .roast > * {
-    margin: initial;
+    margin: 5px 0;
 }
 
 .about-author {
