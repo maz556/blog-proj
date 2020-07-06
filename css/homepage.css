@@ -10,7 +10,7 @@ body {
     grid-template-areas:
         "hd hd hd hd"
         "crd crd crd ad"
-        "ft ft ft ft"; 
+        "ft ft ft ft";
     /* background-color: lightskyblue; */
     /* font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; */
     font-family: "Apple Chancery", "Snell Roundhand", "URW Chancery L", cursive;

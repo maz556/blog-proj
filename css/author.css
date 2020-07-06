@@ -11,7 +11,7 @@
     box-shadow: 2px 2px 4px 2px gray;
 }
 
-.author-card > * {
+.author-card-child {
     margin: 5px;
 }
 
@@ -19,7 +19,7 @@
     grid-area: pic;
 }
 
-#profile-pic > * {
+.profile-pic-child {
     border-radius: 10px;
     width: 100%;
     display: block;
@@ -29,7 +29,7 @@
     grid-area: info;
 }
 
-.author-info > * {
+.author-info-child {
     margin: 0;
 }
 
@@ -37,7 +37,7 @@
     grid-area: qt;
 }
 
-.author-quote > p {
+.author-quote-label {
     margin: initial;
 }
 

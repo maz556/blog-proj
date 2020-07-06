@@ -6,16 +6,16 @@
     padding: 5px;
 }
 
-.social-button {
+.social-icon {
     height: 100%;
     display: block;
 }
 
-.social > * {
+.social-item {
     margin: 5px;
 }
 
-.social > a {
+.social-button {
     height: 100%;
 }
 
