@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dumb-Looking Animals</title>
-    <link rel="stylesheet" href="css/homepage.css" />
-</head>
-<body>
-    <!-- header -->
-    <header>
-        <h1 id="title"><a href="index.html">Dumb-Looking Animals for the <em>Slightly</em> More Intelligent</a></h1>
-        <div class="head-buttons">
-            <button class="styled-button">Subscribe</button>
-            <button class="styled-button">Donate!</button>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dumb-Looking Animals</title>
+        <link rel="stylesheet" href="css/homepage.css" />
+        <script>
+            function playSound(name) {
+                document.getElementById(name).play();
+            }
+        </script>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <h1 id="title"><a href="index.html">Dumb-Looking Animals for the <em>Slightly</em> More Intelligent</a></h1>
+            <div class="head-buttons">
+                <audio id="thanks_sound" src="sounds/thank_you.mp3" autoplay="false"></audio>
+                <audio id="cash_sound" src="sounds/cash_register.mp3" autoplay="false"></audio>
+                <button class="styled-button" onclick="playSound('thanks_sound');">Subscribe</button>
+                <button class="styled-button" onclick="playSound('cash_sound');">Donate!</button>
+            </div>
+        </header>
+        <!-- blog cards -->
+        <div class="card-container">
+            <div class="card-list">
+                <a class="card" href="blogpost.html">
+                    <div class="card-image" id="image1"></div>
+                    <h2>Eddie Rabbitt Potato</h2>
+                    <h3>May 07, 2020</h3>
+                    <h4>submitted by bainfrog</h4>
+                </a>
+                <a class="card" href="blogpost.html">
+                    <div class="card-image" id="image2"></div>
+                    <h2>Blob Fish</h2>
+                    <h3>May 07, 2020</h3>
+                    <h4>submitted by bainfrog</h4>
+                </a>
+                <a class="card" href="blogpost.html">
+                    <div class="card-image" id="image3"></div>
+                    <h2>Crying Cat</h2>
+                    <h3>May 07, 2020</h3>
+                    <h4>submitted by bainfrog</h4>
+                </a>
+                <a class="card" href="blogpost.html">
+                    <div class="card-image" id="image4"></div>
+                    <h2>Pac-Man Frog</h2>
+                    <h3>May 07, 2020</h3>
+                    <h4>submitted by bainfrog</h4>
+                </a>
+            </div>
         </div>
-    </header>
-    <!-- blog cards -->
-    <div class="card-container">
-        <div class="card-list">
-            <a class="card" href="blogpost.html">
-                <div class="card-image" id="image1"></div>
-                <h2>Eddie Rabbitt Potato</h2>
-                <h3>May 07, 2020</h3>
-                <h4>submitted by bainfrog</h4>
-            </a>
-            <a class="card" href="blogpost.html">
-                <div class="card-image" id="image2"></div>
-                <h2>Blob Fish</h2>
-                <h3>May 07, 2020</h3>
-                <h4>submitted by bainfrog</h4>
-            </a>
-            <a class="card" href="blogpost.html">
-                <div class="card-image" id="image3"></div>
-                <h2>Crying Cat</h2>
-                <h3>May 07, 2020</h3>
-                <h4>submitted by bainfrog</h4>
-            </a>
-            <a class="card" href="blogpost.html">
-                <div class="card-image" id="image4"></div>
-                <h2>Pac-Man Frog</h2>
-                <h3>May 07, 2020</h3>
-                <h4>submitted by bainfrog</h4>
-            </a>
+        <!-- advertisement -->
+        <div class="ad">
+            <img src="images/ad.gif" alt="Please don't click this" />
         </div>
-    </div>
-    <!-- advertisement -->
-    <div class="ad">
-        <img src="images/ad.gif" alt="Please don't click this" />
-    </div>
-    <!-- footer -->
-    <footer>
-        <i>a blog by Manuel Zamora</i>
-        <b>&copy Copyright 2020</b>
-    </footer>
-</body>
+        <!-- footer -->
+        <footer>
+            <i>a blog by Manuel Zamora</i>
+            <b>&copy Copyright 2020</b>
+        </footer>
+    </body>
+</html>

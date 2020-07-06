@@ -21,7 +21,6 @@ header {
 .head-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .styled-button {
